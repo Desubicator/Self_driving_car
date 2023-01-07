@@ -7,7 +7,7 @@ class Car{
         this.speed = 0;
         this.acceleration = 0.2;
         this.maxSpeed = 3;
-        this.friction = 0.05;
+        this.friction = 0.1;
         this.angle = 0;
         this.controls = new Controls();
     }
@@ -53,7 +53,7 @@ class Car{
 
         this.x-=Math.sin(this.angle)*this.speed;
         this.y-=Math.cos(this.angle)*this.speed;
-        this.y-=this.speed;
+        
     }
 
     draw(ctx){
